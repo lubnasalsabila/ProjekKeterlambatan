@@ -1,0 +1,54 @@
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 214px;
+    background-color: #86A789;
+    top: 0;
+    bottom: 0;
+    width: 280px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.side-bar a {
+    color: black;
+    text-decoration: none;
+    margin-left:10px;
+}
+.nav-links {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+
+/* Gaya untuk konten (termasuk kotak input) */
+.content {
+    margin-left: 250px; /* Sesuaikan margin dengan lebar sidebar */
+    padding: 20px;
+}
+
+
+@media(max-width: 900px) {
+    body{
+        overflow-y: scroll;
+    }
+    nav{
+        display: none;
+        width: 200px;
+    }
+}
+.dropdown {
+    position: relative;
+}
+
+body{
+    margin-right: 35%;
+}
+.container mt-5{
+    top: 0;
+    bottom: 0;
+}
+
+
