@@ -7,22 +7,38 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Download-PDF</title>
     <style>
-        .container {
-  display: flex;
-  justify-content: space-between; /* Menyusun dua div secara horizontal */
-  width: 80%; /* Atur lebar container sesuai kebutuhan Anda */
-  margin: 0 auto; /* Mengatur container di tengah halaman */
-}
+        .row1 {
+        width: 80%; /* Atur lebar container sesuai kebutuhan Anda */
+        margin: 0 auto;
+        padding-top: 7%;
+    }
 
-.row1 {
-  width: 100%;
-}
+    .content1 {
+        width: 35%; /* Memberikan lebar untuk setiap content (memberikan jarak 2% antara keduanya) */
+        padding: 10px;
+        float: left;
+    }
+    .content2 {
+        width: 55%; /* Memberikan lebar untuk setiap content (memberikan jarak 2% antara keduanya) */
+        padding: 10px;
+        float: right;
+    }
+    .row2 {
+        width: 80%; /* Atur lebar container sesuai kebutuhan Anda */
+        margin: 0 auto;
+        padding-top: 30%;
+    }
 
-.content {
-  width: 40%; /* Memberikan lebar untuk setiap content (memberikan jarak 2% antara keduanya) */
-  border: 1px solid #ccc;
-  padding: 10px;
-}
+    .content-1 {
+        width: 42%; /* Memberikan lebar untuk setiap content (memberikan jarak 2% antara keduanya) */
+        float: left;
+        margin-right: 40px;
+    }
+    .content-2 {
+        width: 40%; /* Memberikan lebar untuk setiap content (memberikan jarak 2% antara keduanya) */
+        float: right;
+        padding-right: 47px;
+    }
 
     </style>
 </head>
@@ -57,34 +73,30 @@
                             Bogor,......
                         </p>
                     </div>
-                        <div class="container">
                             <div class="row1">
-                                <div class="content">
+                                <div class="content1">
                                   Peserta Didik,
                                   <br><br><br><br>
                                   ( {{ $lates->student->name }} )
                                 </div>
-                                <div class="content">
+                                <div class="content2">
                                   Orang Tua/Wali Peserta Didik,
                                   <br><br><br><br>
                                   (..............)
                                 </div>
-                            </div>
-                        </div> <br>
-                        <div class="container2">
+                            </div> <br>
                             <div class="row2">
-                                <div class="content2">
+                                <div class="content-1">
                                     Pembimbing Siswa,
                                     <br><br><br><br>
                                     ( {{ $lates->student->rayon->user->name }} )
                                 </div>
-                                <div class="content">
+                                <div class="content-2">
                                     Kesiswaan,
                                     <br><br><br><br>
                                     (..............)
                                 </div>
                             </div>
-                        </div> 
                     </p>
                 </div>
             </div>
